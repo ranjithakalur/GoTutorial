@@ -8,12 +8,20 @@ func main() {
 	fmt.Print("Digite um número: ")
 	fmt.Scan(&numero)
 
-	switch {
-	case numero < 0:
+	switch sub := numero - 10; {
+	case sub < 0:
 		fmt.Println("Negativo")
-	case numero > 0:
+	case sub > 0:
 		fmt.Println("Positivo")
 	default:
 		fmt.Println("Zero")
 	}
+
+	/*
+		Pro caso de precisar usar uma variável uma única vez ou para uma única condição.
+	*/
+	if par := (numero%2 == 0); par {
+		fmt.Printf("O número %v é par!\n", numero)
+	}
+
 }
