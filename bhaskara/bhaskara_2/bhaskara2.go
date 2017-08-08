@@ -25,7 +25,7 @@ func main() {
 		raizd := math.Sqrt(d)
 		fmt.Printf("Delta = %v\n", d)
 
-		switch d != 0 {
+		switch {
 		case d < 0:
 			fmt.Printf("Outch! :-(\n")
 			fmt.Printf("Infelizmente o valor de Delta é negativo. Por favor, reinsira os dados.\n")
