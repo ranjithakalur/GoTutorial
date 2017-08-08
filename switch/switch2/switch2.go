@@ -8,7 +8,8 @@ func main() {
 	fmt.Print("Digite um número: ")
 	fmt.Scan(&numero)
 
-	switch sub := numero - 10; {
+	sub := numero - 10
+	switch {
 	case sub < 0:
 		fmt.Println("Negativo")
 	case sub > 0:
