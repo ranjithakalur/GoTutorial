@@ -8,6 +8,10 @@ import (
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
-	n := rand.Intn(6) + 1
-	fmt.Println(n)
+	x := genNumber(1, 6)
+	fmt.Println(x)
+}
+
+func genNumber(minNumber int, maxNumber int) int {
+	return rand.Intn(maxNumber-minNumber+1) + minNumber
 }
